@@ -163,7 +163,7 @@ class GNNPolicy(BaseModel):
         emb_size = 64
         cons_nfeats = 5
         edge_nfeats = 1
-        var_nfeats = 19    # 源码内容
+        var_nfeats = 19  
 
         # CONSTRAINT EMBEDDING
         self.cons_embedding = torch.nn.Sequential(
