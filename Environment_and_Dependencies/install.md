@@ -48,9 +48,6 @@ Successfully installed PySCIPOpt-6.0.0
 **For RTX 2080Ti**：
 ```bash
 pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-pip install tqdm
-pip install tensorboard
-pip install scipy
 TORCH=1.7.1 && CUDA=cu101 && \
 pip install torch-scatter --no-index -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html && \
 pip install torch-sparse --no-index -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html && \
