@@ -1,5 +1,6 @@
 ## Build SCIP from source
-
+``` 
+if "myscip" is your root path, please revisescip/src/
 
 
 If your GPU device is the RTX 2080Ti：
