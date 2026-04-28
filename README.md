@@ -16,11 +16,11 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 
 This repository uses or draws inspiration from the following open-source projects:
 
-- **Gasse et al. (NeurIPS 2019)** - Provides a generic bipartite graph representation for MILP, which serves as the foundation of our implementation.
+- **Gasse et al. (NeurIPS 2019)** - Provides a generic bipartite graph representation for MILP, which serves as the foundation for constructing our Pgraph.
   - Paper: "Exact Combinatorial Optimization with Graph Convolutional Neural Networks"
   - Repository: https://github.com/ds4dm/learn2branch
 
-- **Lin et al. (ICLR 2024)** - The AMILP method in this work is adapted from CAMBranch.
+- **Lin et al. (ICLR 2024)** - Provides the foundational AMILP idea, which is adapted in this work to augment branching samples for SCUC.
   - Paper: "CAMBranch: Contrastive learning with augmented MILPs for branching"
   - Author's GitHub: https://github.com/linjc16
 
