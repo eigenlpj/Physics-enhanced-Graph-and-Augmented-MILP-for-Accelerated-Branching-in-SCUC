@@ -1,4 +1,7 @@
 ## Build SCIP from source
+SCIP 10.0.0 (free for academic uses)
+https://github.com/scipopt/scip
+
 ``` 
 Set `myscip` as your SCIP root directory. 
 Modify `myscip/scip/src/scip/branch.c` to enable the Python API `SCIPexecBranchruleLP`, which executes the branching rule for fractional LP solutions. 
@@ -6,7 +9,10 @@ Our modified version is provided.
 Then, build the SCIP source code using CMake and Visual C++.
 To enable our customized PySCIPOpt to locate the SCIP libraries, we package the compiled SCIP into a distribution named `SCIPOPT`, which contains three folders: `bin`, `lib`, and `include`. 
 A Windows environment variable `SCIPOPTDIR` is then created and set to the `SCIPOPT/bin` directory.
+```
 
+## Build PySCIPOpt from source
+``` 
 
 If your GPU device is the RTX 2080Ti：
 conda create -n scip1000_getState python==3.10.19
