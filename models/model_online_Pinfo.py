@@ -160,8 +160,7 @@ class GNNPolicy_Pinfo(BaseModel):
         emb_size = 64
         cons_nfeats = 5
         edge_nfeats = 1
-        var_nfeats = 21      # cambranch的v+Pmax的比例+Pmin的数值   (最好)
-
+        var_nfeats = 21     
 
         # CONSTRAINT EMBEDDING
         self.cons_embedding = torch.nn.Sequential(
