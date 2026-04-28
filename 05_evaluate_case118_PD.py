@@ -345,8 +345,8 @@ if __name__ == "__main__":
     if args.problem == 'case118':
 
         #                    I1    I2    I3    I4    I5    I6    I7    I8    I9    I10
-        user_selected_ids = [2404, 2405, 2433, 2434, 2435, 2501, 2504, 2505, 2532, 2534 ]  # 本人通过事先测试relpscost分支效果后选出的算例
-        instances += [{'type': 'BESSs', 'path': f"./data/instances/case118/test_milp/case118_{i}/case118_{i}.lp"} for i in user_selected_ids]    # 共13个算例
+        user_selected_ids = [2404, 2405, 2433, 2434, 2435, 2501, 2504, 2505, 2532, 2534 ] 
+        instances += [{'type': 'BESSs', 'path': f"./data/instances/case118/test_milp/case118_{i}/case118_{i}.lp"} for i in user_selected_ids]    # 共10个算例
 
     else:
         raise NotImplementedError
