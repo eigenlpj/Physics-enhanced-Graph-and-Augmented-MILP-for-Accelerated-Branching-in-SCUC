@@ -163,10 +163,9 @@ class GNNPolicy(BaseModel):
         emb_size = 64
         cons_nfeats = 5
         edge_nfeats = 1
-        var_nfeats = 21        # cambranch的v+Pmax的比例+Pmin的数值   (最好)
+        var_nfeats = 21       
         if if_pgraph != 'YES':
-            var_nfeats = 19    # 源码内容
-
+            var_nfeats = 19   
         # var_nfeats = 23    # cambranch的v+Pmax信息+Pmin信息
         # var_nfeats = 22    # cambranch的v+Pmax信息+keepT信息
         # var_nfeats = 25    # cambranch的v+ramp+su+sd
