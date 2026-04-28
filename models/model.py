@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch_geometric
 import numpy as np
-# from torch_geometric.nn.pool.topk_pool import filter_adj, topk  # 源码内容 2025.8.8佳明注释
 from torch_geometric.utils import scatter, softmax
 import copy
 
@@ -207,7 +206,7 @@ class GNNPolicy(BaseModel):
             torch.nn.Linear(emb_size, 1, bias=False),
         )
         
-        if cl:  # 2025.8.10 佳明注释 表示这些层只在使用对比学习（Contrastive Learning）时才启用,用于聚合变量、约束的联合表示
+        if cl:  
             self.var_aggr_mlp = nn.Linear(emb_size * 2, emb_size)
             self.cons_aggr_mlp = nn.Linear(emb_size * 2, emb_size)
             self.last = nn.Sequential(
