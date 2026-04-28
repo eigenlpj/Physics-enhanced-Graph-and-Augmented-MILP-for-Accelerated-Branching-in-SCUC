@@ -11,7 +11,7 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 2. [Sample Collection](03_generate_dataset_case118.py)
 3. [PGNN Training](***code to be released after paper acceptance***)
 4. [PGNN Deployment and Instance Testing](05_evaluate_case118_PD.py)
-<img src="graphics/full-results.jpg" width=80% height=80%>
+<img src="graphics/The_PGNN_branching_framework.png" width=80% height=80%>
 
 ## Acknowledgments
 
