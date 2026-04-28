@@ -31,8 +31,8 @@ We thank the authors for making their work publicly available.
 If you use this code in your work, please cite our paper:
 
 ```bibtex
-@article{li2026physics,
+@article{li2026pgraph,
   title={Physics-enhanced Graph and Augmented-MILP for Accelerated Branching in Security-Constrained Unit Commitment},
-  author={Li, Jiaming and Li, Peijie and Bai, Xiaoqing},
+  author={Peijie Li and Jiaming Li and Xiaoqing Bai},
   note={under review at IEEE Transactions on Power Systems}
 }
