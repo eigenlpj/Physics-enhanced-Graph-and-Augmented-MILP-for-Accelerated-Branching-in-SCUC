@@ -1,3 +1,7 @@
+## Build SCIP from source
+
+
+
 If your GPU device is the RTX 2080Ti：
 conda create -n scip1000_getState python==3.10.19
 conda activate scip1000_getState
