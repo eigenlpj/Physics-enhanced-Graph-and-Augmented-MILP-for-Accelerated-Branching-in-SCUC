@@ -1,7 +1,5 @@
 ## Build SCIP from source
-SCIP 10.0.0 (Apache-2.0 license, free for academic use)
-Repository: https://github.com/scipopt/scip
-
+SCIP 10.0.0 (Apache-2.0 license, free for academic use): https://github.com/scipopt/scip
 
 Set `myscip` as your SCIP root directory. 
 Modify `myscip/scip/src/scip/branch.c` to enable the Python API `SCIPexecBranchruleLP`, which executes the branching rule for fractional LP solutions. 
