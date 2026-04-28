@@ -7,9 +7,9 @@ Our modified version is provided.
 
 Then, build the SCIP source code using CMake and Visual C++.
 
-To enable our customized PySCIPOpt to locate the SCIP libraries, we package the compiled SCIP into a distribution named `SCIPOPT` (as provided in `SCIPOPTDIR.zip` in this repository), 
+To enable our customized PySCIPOpt to locate the SCIP libraries, we package the compiled SCIP into a distribution named `SCIPOPTDIR` (as provided in `SCIPOPTDIR.zip` in this repository), 
 which contains three folders: `bin`, `lib`, and `include`. 
-A Windows environment variable `SCIPOPTDIR` is then created and set to the `SCIPOPT/bin` directory.
+A Windows environment variable `SCIPOPTDIR` is then created and set to the `SCIPOPTDIR/bin` directory.
 
 
 ## Python Virtual Environment
