@@ -8,9 +8,9 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 ## Table of Contents
 
 1. [Environment and Dependencies](./Environment_and_Dependencies/install.md)
-2. [Sample Collection](#sample-collection)
-3. [PGNN Training](#model-training)
-4. [PGNN Deployment and Instance Testing](#instance-testing)
+2. [Sample Collection](03_generate_dataset_case118.py)
+3. [PGNN Training](*to be released after acceptance*)
+4. [PGNN Deployment and Instance Testing](05_evaluate_case118_PD.py)
 
 ## Acknowledgments
 
