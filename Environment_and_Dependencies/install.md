@@ -1,4 +1,4 @@
-## Build SCIP from source
+## Build SCIP from Source
 SCIP 10.0.0 (Apache-2.0 license, free for academic use): https://github.com/scipopt/scip
 
 Set `myscip` as your SCIP root directory. 
