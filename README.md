@@ -5,7 +5,12 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 
 ---
 
+## Table of Contents
 
+1. [Environment and Dependencies](#environment-and-dependencies)
+2. [Sample Collection](#sample-collection)
+3. [PGNN Training](#model-training)
+4. [PGNN Deployment and Instance Testing](#instance-testing)
 
 ## Citation
 
