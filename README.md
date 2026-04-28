@@ -5,10 +5,7 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 
 ---
 
-```markdown
-This is the code for our paper "Physics-enhanced Graph and Augmented-MILP for Accelerated Branching in Security-Constrained Unit Commitment", currently under review at *IEEE Transactions on Power Systems*.
 
-**Note:** The AMILP module in our implementation is adapted from [CAMBranch](https://github.com/xxx) by Lin et al. (ICLR 2024). We thank the authors for their open-source contribution.
 
 ## Citation
 
