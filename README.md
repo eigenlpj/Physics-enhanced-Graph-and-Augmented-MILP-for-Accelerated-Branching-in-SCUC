@@ -5,4 +5,4 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 
 ---
 
-This is the code for our paper ***Physics-enhanced Graph and Augmented-MILP for Accelerated Branching in SCUC, currently under review at IEEE Transactions on Power Systems.
+This is the code for our paper "Physics-enhanced Graph and Augmented-MILP for Accelerated Branching in Security-Constrained Unit Commitment", currently under review at IEEE Transactions on Power Systems.
