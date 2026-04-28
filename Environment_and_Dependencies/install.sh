@@ -1,6 +1,7 @@
 ## Build SCIP from source
 ``` 
-if "myscip" is your root path, please revisescip/src/
+Supposed "myscip" is your root path, please revise scip/src/branch.c for supporting Python API "SCIPexecBranchruleLP"- executes branching rule for fractional LP solution.
+We supply our version here.
 
 
 If your GPU device is the RTX 2080Ti：
