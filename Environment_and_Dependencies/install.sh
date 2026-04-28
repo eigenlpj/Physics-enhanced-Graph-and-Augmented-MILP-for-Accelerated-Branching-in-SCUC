@@ -1,7 +1,7 @@
 ## Build SCIP from source
 ``` 
 Set `myscip` as your SCIP root directory. 
-Modify `scip/src/branch.c` to enable the Python API `SCIPexecBranchruleLP`, which executes the branching rule for fractional LP solutions. 
+Modify `myscip/scip/src/scip/branch.c` to enable the Python API `SCIPexecBranchruleLP`, which executes the branching rule for fractional LP solutions. 
 Our modified version is provided.
 Then, build the SCIP source code using CMake and Visual C++.
 
