@@ -160,14 +160,7 @@ class GNNPolicy(BaseModel):
         emb_size = 64
         cons_nfeats = 5
         edge_nfeats = 1
-        var_nfeats = 19    # 源码内容
-        # var_nfeats = 21      # cambranch的v+Pmax的比例+Pmin的数值   (最好)
-        # var_nfeats = 23    # cambranch的v+Pmax信息+Pmin信息
-        # var_nfeats = 22    # cambranch的v+Pmax信息+keepT信息
-        # var_nfeats = 25    # cambranch的v+ramp+su+sd
-        # var_nfeats = 27    # cambranch的v+ptdf+plinemax(4列ptdf,4列plinemax)
-        # var_nfeats = 38    # cambranch的v+Pinfo-all
-        # var_nfeats = 22    # cambranch的v+Pmax的比例+Pmax的数值+Pmin的数值
+        var_nfeats = 19   
 
         # CONSTRAINT EMBEDDING
         self.cons_embedding = torch.nn.Sequential(
