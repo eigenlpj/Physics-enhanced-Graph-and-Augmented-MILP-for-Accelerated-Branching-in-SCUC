@@ -62,7 +62,7 @@ dependencies:
       - psutil==7.2.2
       - pyomo==6.10.0
       - pyparsing==3.3.2
-      - pyscipopt==6.0.0(The customized source code needs to be built separately. For the building method, please refer to the "Build Tool" folder.)
+      - pyscipopt==6.0.0(The customized source code needs to be built separately. For the building method, please refer to the "install.md" file.)
       - python-dateutil==2.9.0.post0
       - pytz==2025.2
       - requests==2.32.5
