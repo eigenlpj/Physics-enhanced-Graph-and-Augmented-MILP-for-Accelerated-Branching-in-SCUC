@@ -4,14 +4,7 @@ import pandas as pd
 import numpy as np
 
 def process_csv_with_random(input_file_path, output_file_path, random_values, columns):
-    """
-    处理 CSV 文件并保存修改后的文件。每一行使用不同的随机数。
-    :param input_file_path: 输入 CSV 文件路径
-    :param output_file_path: 输出 CSV 文件路径
-    :param random_values: 随机数列表
-    :param columns: 需要处理的列索引（从 0 开始）
-    """
-    input_df = pd.read_csv(input_file_path)  # 读取输入 CSV 文件
+    input_df = pd.read_csv(input_file_path)  
     num_rows = len(input_df)
 
     # 确保随机数数量与行数匹配
@@ -31,7 +24,7 @@ def process_csv_with_random(input_file_path, output_file_path, random_values, co
 
 
 if __name__ == "__main__":
-    BASE_FOLDER = r"D:\LiJiamigFile\CAMBranch-ljmdata\data\instances\case118-v3\case118_1"  # 原始文件夹根目录
+    BASE_FOLDER = r"./data/instances/case118/case118_1"  # 原始文件夹根目录
     caseName = r"case118"                       # 算例基础名称
     # 新建文件夹总数
     NUM_FOLDERS = 2599
