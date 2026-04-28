@@ -22,6 +22,7 @@ If you use this code in your work, please cite our paper:
   author={Li, Jiaming and Li, Peijie and Bai, Xiaoqing},
   note={under review at IEEE Transactions on Power Systems}
 }
+---
 
 ## Acknowledgments
 
