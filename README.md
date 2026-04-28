@@ -9,7 +9,7 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 
 1. [Environment and Dependencies](./Environment_and_Dependencies/install.md)
 2. [Sample Collection](03_generate_dataset_case118.py)
-3. [PGNN Training](*to be released after acceptance*)
+3. [PGNN Training](***code to be released after paper acceptance***)
 4. [PGNN Deployment and Instance Testing](05_evaluate_case118_PD.py)
 
 ## Acknowledgments
