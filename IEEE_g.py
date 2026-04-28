@@ -259,7 +259,7 @@ def getunitdata(unitdataname):
             Hunit.lowprice = lowprice
             if (fenduanshu > 0):
                 for m in range(0, fenduanshu):
-                    Hunit.addfenduan(float(list[16 + m]), float(list[17 + m]), float(list[27 + m]))  # 这个地方太抽象了,指的是把HUnitparam类中与分段报价相关的属性送给unitlist
+                    Hunit.addfenduan(float(list[16 + m]), float(list[17 + m]), float(list[27 + m]))  
             unitlist.append(Hunit)
     return unitlist
 # endregion
@@ -330,10 +330,10 @@ def getstoredata(storedataname):
             D_segments = int(list[32])
             if (C_segments > 0):
                 for m in range(0, C_segments):
-                    store.addC(float(list[11 + m]), float(list[12 + m]), float(list[22 + m]))  # 这个地方太抽象了,指的是把storeparam类中与充电分段报价相关的属性送给storelist
+                    store.addC(float(list[11 + m]), float(list[12 + m]), float(list[22 + m]))  
             if (D_segments > 0):
                 for m in range(0, D_segments):
-                    store.addD(float(list[33 + m]), float(list[34 + m]), float(list[44 + m]))  # 这个地方太抽象了,指的是把storeparam类中与放电分段报价相关的属性送给storelist
+                    store.addD(float(list[33 + m]), float(list[34 + m]), float(list[44 + m]))  
             storelist.append(store)
     return storelist
 # endregion
