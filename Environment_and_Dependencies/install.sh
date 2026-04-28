@@ -1,5 +1,5 @@
 ## Build SCIP from source
-SCIP 10.0.0 (free for academic uses)
+SCIP 10.0.0 (Apache-2.0, free for academic uses)
 https://github.com/scipopt/scip
 
 ``` 
