@@ -4,6 +4,8 @@ Set `myscip` as your SCIP root directory.
 Modify `myscip/scip/src/scip/branch.c` to enable the Python API `SCIPexecBranchruleLP`, which executes the branching rule for fractional LP solutions. 
 Our modified version is provided.
 Then, build the SCIP source code using CMake and Visual C++.
+To enable our customized PySCIPOpt to locate the SCIP libraries, we package the compiled SCIP into a distribution named `SCIPOPT`, which contains three folders: `bin`, `lib`, and `include`. 
+A Windows environment variable `SCIPOPTDIR` is then created and set to the `SCIPOPT/bin` directory.
 
 
 If your GPU device is the RTX 2080Ti：
