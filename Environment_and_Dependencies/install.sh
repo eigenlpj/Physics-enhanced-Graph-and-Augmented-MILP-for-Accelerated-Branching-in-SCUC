@@ -1,7 +1,9 @@
 ## Build SCIP from source
 ``` 
-Supposed "myscip" is your root path, please revise scip/src/branch.c for supporting Python API "SCIPexecBranchruleLP"- executes branching rule for fractional LP solution.
-We supply our version here.
+Set `myscip` as your SCIP root directory. 
+Modify `scip/src/branch.c` to enable the Python API `SCIPexecBranchruleLP`, which executes the branching rule for fractional LP solutions. 
+Our modified version is provided.
+Then, build the SCIP source code using CMake and Visual C++.
 
 
 If your GPU device is the RTX 2080Ti：
