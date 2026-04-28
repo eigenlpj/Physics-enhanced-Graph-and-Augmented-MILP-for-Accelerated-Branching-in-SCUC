@@ -12,18 +12,6 @@ Peijie Li, Jiaming Li, Xiaoqing Bai
 3. [PGNN Training](#model-training)
 4. [PGNN Deployment and Instance Testing](#instance-testing)
 
-## Citation
-
-If you use this code in your work, please cite our paper:
-
-```bibtex
-@article{li2026physics,
-  title={Physics-enhanced Graph and Augmented-MILP for Accelerated Branching in Security-Constrained Unit Commitment},
-  author={Li, Jiaming and Li, Peijie and Bai, Xiaoqing},
-  note={under review at IEEE Transactions on Power Systems}
-}
----
-
 ## Acknowledgments
 
 This repository uses or draws inspiration from the following open-source projects:
@@ -37,3 +25,14 @@ This repository uses or draws inspiration from the following open-source project
   - Author's GitHub: https://github.com/linjc16
 
 We thank the authors for making their work publicly available.
+
+## Citation
+
+If you use this code in your work, please cite our paper:
+
+```bibtex
+@article{li2026physics,
+  title={Physics-enhanced Graph and Augmented-MILP for Accelerated Branching in Security-Constrained Unit Commitment},
+  author={Li, Jiaming and Li, Peijie and Bai, Xiaoqing},
+  note={under review at IEEE Transactions on Power Systems}
+}
