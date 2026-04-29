@@ -27,5 +27,5 @@ This repository uses or draws inspiration from the following open-source project
 We thank the authors for making their work publicly available.
 
 ## Contributor
-[Peijie Li](lipeijie@gxu.edu.cn), a professor in Guangxi University, China.<br>
+[Peijie Li](mailto:lipeijie@gxu.edu.cn), a professor in Guangxi University, China.<br>
 Jiaming Li, a postgraduate in Guangxi University, China.
