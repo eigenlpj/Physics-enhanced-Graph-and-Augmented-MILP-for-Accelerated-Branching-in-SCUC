@@ -7,8 +7,8 @@ Security-Constrained Unit Commitment (SCUC) is essential for day-ahead market cl
 
 1. [Environment and Dependencies](./Environment_and_Dependencies/install.md)
 2. [Sample Collection](03_generate_dataset_case118.py)
-3. [Data Augmentation](***code to be released after paper acceptance***)
-4. [PGNN Training](***code to be released after paper acceptance***)
+3. [Data Augmentation]
+4. [PGNN Training]
 5. [PGNN Deployment and Instance Testing](05_evaluate_case118_PD.py)
 <img src="graphics/The_PGNN_branching_framework.png" width=80% height=80%>
 
