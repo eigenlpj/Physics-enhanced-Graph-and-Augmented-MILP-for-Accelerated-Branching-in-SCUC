@@ -1,8 +1,6 @@
 # Pgraph and AMILP for Accelerated Branching in SCUC
 Security-Constrained Unit Commitment (SCUC) is essential for day-ahead market clearing and is typically formulated as a Mixed-Integer Linear Programming (MILP) problem, solved by branch-and-cut (B&C)-based solvers. While recent Graph Neural Network (GNN)-based branching strategies have shown promise, existing methods face two critical bottlenecks. First, generic mathematical features fail to capture the intrinsic physical characteristics of SCUC, limiting branching quality. Second, massive strong branching (StB) samples required for training on large-scale systems are computationally prohibitive. To address these challenges, this paper proposes a physics-informed graph neural network (PGNN) branching framework incorporating two novel modules:(i) a physics-enhanced graph (Pgraph); and (ii) an Augmented MILP (AMILP) method.
 
-Peijie Li, Jiaming Li, Xiaoqing Bai
-
 ---
 
 ## Table of Contents
@@ -27,3 +25,7 @@ This repository uses or draws inspiration from the following open-source project
   - Author's GitHub: https://github.com/linjc16
 
 We thank the authors for making their work publicly available.
+
+## Contributor
+[Peijie Li](lipeijie@gxu.edu.cn), a professor in Guangxi University, China.<br>
+[Jiaming Li], a postgraduate in Guangxi University, China.
