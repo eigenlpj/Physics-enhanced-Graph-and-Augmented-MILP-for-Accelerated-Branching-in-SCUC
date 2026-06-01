@@ -76,7 +76,7 @@ def main():
             result_trainGCNN_cmd = subprocess.run(trainGCNN_cmd, check=True, text=True)
         except subprocess.CalledProcessError as e:
             print(f"GCNN train fail: {e}")
-            break  # 可选：失败时停止
+            break  
 
         if i == end:
             iter_finish_flag = 1
