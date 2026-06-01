@@ -2,86 +2,84 @@ import os
 import subprocess
 from multiprocessing import Pool
 
+from sympy import false
 
-BASE_DIR = r"./data/instances/case118/case118_1"
-caseName = r"case118"
-slackBus = r"66"
+# BASE_DIR = r"....\data\instances\case118"
+# caseName = r"case118"
+# slackBus = r"66"
 
-# Cleanup switch (True: delete old .lp files and PTDF_matrix.csv; False: keep existing PTDF_matrix.csv)
+BASE_DIR = r"....\data\instances\Anonymous"
+caseName = r"Anonymous"
+slackBus = r"13"
+
+# BASE_DIR = r"....\data\data\instances\case1888"
+# caseName = r"case1888"
+# slackBus = r"1671"
+
+# # BASE_DIR = r"....\data\instances\case2383"
+# caseName = r"case2383"
+# slackBus = r"18"
+
+
+# Step 0. Clean the switch (True: Delete the old.lp file and PTDF_matrix.csv file; False: Keep the old files, that is, retain the old PTDF_matrix.csv file)
 CLEAN_UP = False
 # CLEAN_UP = True
 
-SCRIPT_PATH = r"./IEEE_g.py"
+# Step 1. Generate.lp file
+SCRIPT_PATH = r"IEEE_g_Anonymous.py"      # Anonymous
+# SCRIPT_PATH = r"IEEE_g.py"              # Others
+
 Begin_no = 1
 NUM_FOLDERS = 2600
-NUM_CORES = 6
+NUM_CORES = 1  # Number of CPU cores used
 
 def clean_directory(base_dir):
-    """
-    遍历 base_dir 下的所有子文件夹，删除 .lp 文件和 PTDF_matrix.csv
-    """
-    print(f"\n  正在扫描目录: {base_dir}")
+    print(f"\n  Scanning the directory: {base_dir}")
     deleted_count = 0
 
-    # 遍历根目录下的所有文件夹
     for root_dir, dirs, files in os.walk(base_dir):
-        # 检查当前层级是否存在目标文件
         files_to_delete = []
 
-        # 查找 .lp 文件
         for f in files:
             if f.endswith('.lp') or f == 'PTDF_matrix.csv':
                 file_path = os.path.join(root_dir, f)
                 files_to_delete.append(file_path)
-
-        # 执行删除
         for file_path in files_to_delete:
             try:
                 os.remove(file_path)
-                # print(f"   - 已删除: {file_path}") # 如果不需要详细列表，可以注释掉这行
                 deleted_count += 1
             except Exception as e:
-                print(f"   - 删除失败 {file_path}: {e}")
+                print(f"   - Deletion failed {file_path}: {e}")
 
     if deleted_count > 0:
-        print(f" 清理完成！共删除 {deleted_count} 个文件 (.lp 和 PTDF_matrix.csv)。")
+        print(f" Cleanup completed! A total of {deleted_count} files (.lp and PTDF_matrix.csv) were deleted.")
     else:
-        print("  未找到需要删除的文件。")
+        print("  No file to be deleted was found.")
     print("-" * 30)
 
 
 def run_script(folder_name):
-    """
-    运行 IEEE.py 脚本，并传递对应的文件夹路径作为参数。
-    :param folder_name: 当前处理的文件夹名称（如 'case118' 或 'case118-1'）
-    """
-    dir_path = os.path.join(BASE_DIR, folder_name)  # 构造完整路径
-    print(f"正在运行脚本，处理文件夹: {dir_path}")
+    dir_path = os.path.join(BASE_DIR, folder_name)
+    print(f"The script is running and processing the folder: {dir_path}")
 
-    # 使用 subprocess 启动 IEEE.py 脚本，并传递 建模程序文件路径、数据文件夹路径、算例基础名称(case118、case300、case2383...)、平衡节点号 一共4个参数
     command = ["python", SCRIPT_PATH, dir_path, caseName, slackBus]
     try:
         result = subprocess.run(command, check=True)
-        print(f"完成处理文件夹: {dir_path}, 算例基础名称: {caseName}, 平衡节点号: {slackBus}")
+        print(f"Completed processing folder: {dir_path}, System base name: {caseName}, Balance node number: {slackBus}")
     except subprocess.CalledProcessError as e:
-        print(f"处理文件夹 {dir_path} 时出错: {e}")
+        print(f"An error occurred while processing the folder {dir_path}: {e}")
 
 
 if __name__ == "__main__":
     if CLEAN_UP:
-        print(">>> 检测到 CLEAN_UP = True，正在执行清理旧的.lp文件和PTDF_matrix.csv任务...")
+        print(">>> It has been detected that CLEAN_UP = True. The task of deleting the old.lp files and PTDF_matrix.csv is being executed...")
         clean_directory(BASE_DIR)
     else:
-        print(">>> 检测到 CLEAN_UP = False，跳过清理步骤。")
-
-
-    # 获取所有需要处理的文件夹名称
+        print("It was detected that CLEAN_UP = False, so the cleanup steps were skipped.")
     folder_names = [f"{caseName}_{y}" for y in range(Begin_no, Begin_no + NUM_FOLDERS)]
-
-    # 使用多进程池并行运行，核心数固定为 12
-    print(f"使用 {NUM_CORES} 个核心并行运行...")
+    print(f"Run in parallel using {NUM_CORES} cores...")
 
     with Pool(processes=NUM_CORES) as pool:
         pool.map(run_script, folder_names)
 
-    print("所有任务已完成！")
+    print("All tasks have been completed!")
