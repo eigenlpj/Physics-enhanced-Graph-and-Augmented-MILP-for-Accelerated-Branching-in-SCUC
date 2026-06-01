@@ -614,10 +614,10 @@ if __name__ == "__main__":
                     m.setBoolParam('branching/vanillafullstrong/donotbranch', True)
                 Dir1 = os.path.dirname(instance['path'])
                 caseName = args.problem
-                unitlist = utilities_pinfo.getunitdata(Dir1 + "\\5-" + caseName + "-机组数据.csv")
-                buslist, load = IEEE_g.getbusdata(Dir1 + "\\1-" + caseName + "-母线名称.csv",
-                                                  Dir1 + "\\2-" + caseName + "-母线负荷.csv",
-                                                  Dir1 + "\\3-" + caseName + "-系统负荷.csv")
+                unitlist = utilities_pinfo.getunitdata(Dir1 + "\\5-" + caseName + "-unitdata.csv")
+                buslist, load = IEEE_g.getbusdata(Dir1 + "\\1-" + caseName + "-busname.csv",
+                                                  Dir1 + "\\2-" + caseName + "-busload.csv",
+                                                  Dir1 + "\\3-" + caseName + "-systemload.csv")
                 linelist = None
                 Blocklineindex = None
                 PTDF_dict = None
